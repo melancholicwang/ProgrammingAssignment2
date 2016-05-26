@@ -3,6 +3,8 @@
 
 ## Write a short comment describing this function
 
+
+
 makeCacheMatrix <- function(x = matrix()) {
         inverseMatrix <- NULL
         set <- function(y) {
@@ -29,6 +31,6 @@ cacheSolve <- function(x, ...) {
       }
       Matrix <- x$get()
       inverseMatrix <- solve(Matrix)
-      x$setInverse <- inverseMatrix
+      x$setInverse(inverseMatrix)
       inverseMatrix
 }
